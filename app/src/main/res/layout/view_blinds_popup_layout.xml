@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blinds_popup_parent"
+    android:paddingBottom="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:focusable="auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blinds_popup_con_name"
+        android:layout_width="277dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/scene_bg"
+        android:backgroundTint="@color/popup_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/blinds_popup_image_icon"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:padding="5dp"
+            android:background="@drawable/icon_change_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529"
+            app:srcCompat="@drawable/blind_on" />
+
+        <EditText
+            android:id="@+id/blinds_popup_input_name"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Title"
+            android:inputType="textShortMessage|textNoSuggestions|text"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D6D6D6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/blinds_popup_image_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <me.g33ry.ihometablet.ui.home.views.CustomSeekBarView
+        android:id="@+id/blinds_popup_seekbar"
+        android:layout_width="120dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blinds_popup_con_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

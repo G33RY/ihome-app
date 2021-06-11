@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/general">
+        <Preference
+            android:title="@string/set_fullscreen"
+            android:key="set_full_screen"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/afk_screen">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="dim_force"
+            android:summaryOff="Off"
+            android:summaryOn="On"
+            android:title="@string/force_dimness" />
+        <me.g33ry.ihometablet.ui.settings.preferences.TimePickerPreference
+            android:defaultValue="1620360000000"
+            android:key="wake_at"
+            android:title="@string/wake_at" />
+        <me.g33ry.ihometablet.ui.settings.preferences.TimePickerPreference
+            android:defaultValue="16204176000000"
+            android:key="dim_at"
+            android:title="@string/dim_at" />
+        <me.g33ry.ihometablet.ui.settings.preferences.NumberInputPreference
+            android:defaultValue="3000000"
+            app:value="30"
+            app:decimalCount="0"
+            app:maximum="100"
+            app:minimum="5"
+            app:difference="5"
+            app:multiplyWith="1000"
+            android:key="disconnect_interval"
+            android:title="@string/disconnect_interval" />
+        <me.g33ry.ihometablet.ui.settings.preferences.NumberInputPreference
+            android:defaultValue="30"
+            app:value="30"
+            app:decimalCount="0"
+            app:difference="5"
+            app:maximum="255"
+            app:minimum="0"
+            android:key="waked_night_brightness"
+            android:title="@string/waked_night_brightness" />
+    </PreferenceCategory>
+
+    <Preference android:enabled="false"/>
+    <Preference android:enabled="false"/>
+
+</androidx.preference.PreferenceScreen>

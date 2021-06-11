@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingStart="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="20dp"
+    android:paddingEnd="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_blinds"
+        android:layout_width="210dp"
+        android:layout_height="190dp"
+        android:background="@drawable/scene_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/blinds_image_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blind_on" />
+
+        <TextView
+            android:id="@+id/blinds_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/blinds_image_icon"
+            app:layout_constraintTop_toBottomOf="@+id/blinds_image_icon" />
+
+        <TextView
+            android:id="@+id/blinds_text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/blinds_text_title"
+            app:layout_constraintStart_toStartOf="@+id/blinds_text_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

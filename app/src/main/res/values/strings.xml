@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IHOME</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="devices">devices</string>
+    <string name="scenes">scenes</string>
+    <string name="title_weather">Weather</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="general">General</string>
+    <string name="set_fullscreen">Set Fullscreen</string>
+    <string name="afk_screen">Afk Screen</string>
+    <string name="force_dimness">Force Dimness</string>
+    <string name="afk_token_id">Token/Coin to show</string>
+    <string name="dim_at">Dim Screen At</string>
+    <string name="wake_at">Wake Screen At</string>
+    <string name="dimness">Dimness</string>
+    <string name="disconnect_interval">Disconnect Interval</string>
+    <string name="search">Search</string>
+    <string name="waked_night_brightness">Waked Brightness at Night</string>
+    <string name="sunrise">Sunrise:</string>
+    <string name="sunset">Sunset:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="wind">Wind:</string>
+    <string name="clouds">Clouds:</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="title_music">Music</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+</resources>

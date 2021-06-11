@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="NumberInputPreference">
+        <attr name="value" format="float" />
+        <attr name="decimalCount" format="integer" />
+        <attr name="multiplyWith" format="integer" />
+        <attr name="minimum" format="float" />
+        <attr name="maximum" format="float" />
+        <attr name="difference" format="float" />
+    </declare-styleable>
+</resources>
