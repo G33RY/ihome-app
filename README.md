@@ -38,6 +38,8 @@ Set the token/coin to show on the afk screen
 Set the time when to undim the screen and set the brightness to 100
 ##### Dim Screen At
 Set the time when to dim the screen and lower the brightness
+##### Disconnect Interval
+Set the time after the app switches to AFK mode
 ##### Dimness
 Set the dimness(opacity) of the content
 ##### Waked Brightness At Night
